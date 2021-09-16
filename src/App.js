@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ConfigProvider } from "antd";
+import { useTranslation } from "react-i18next";
 
-function App() {
+const App = () => {
+  const { t, i18n } = useTranslation(["common"]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider direction={i18n?.dir()}>
+      <div className="App">{t("HELLO")}</div>
+    </ConfigProvider>
   );
-}
+};
 
 export default App;
