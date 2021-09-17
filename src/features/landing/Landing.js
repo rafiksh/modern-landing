@@ -7,6 +7,7 @@ import { AboutComponent } from "./landingComponents";
 
 import "./Landing.css";
 import { LinkButton } from "../../styled/button/button";
+import { SubTitle, Title } from "../../styled/typography/typography";
 
 const LandingComponent = () => {
   const { t, i18n } = useTranslation(["landing"]);
@@ -105,7 +106,7 @@ const LandingComponent = () => {
         >
           <Col>
             <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#">
-              <div className="logo">{t("LANDING")}</div>
+              <SubTitle>{t("LANDING")}</SubTitle>
             </HashLink>
           </Col>
           <Col>
@@ -120,6 +121,11 @@ const LandingComponent = () => {
             )}
           </Col>
         </Row>
+
+        <Col xs={24} id="home">
+          <div style={{ height: 100, backgroundColor: "red" }}></div>
+        </Col>
+
         <div style={{ height: "1200px" }} />
         <div id="pricing"></div>
 

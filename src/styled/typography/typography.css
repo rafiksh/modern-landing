@@ -1,0 +1,27 @@
+.title {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 414px) {
+  .title {
+    font-size: 54px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .paragraph {
+    font-size: 13px;
+  }
+}
