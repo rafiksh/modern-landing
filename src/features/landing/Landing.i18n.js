@@ -1,13 +1,12 @@
 /**
- * English translation resources.
- * Each object correspond to a namespace related to a feature.
+ * i18n landing namespace
+ * Consists of English and arabic translations
  */
-const en = {};
-
-/**
- * Arabic translation resources.
- * Each object correspond to a namespace related to a feature.
- */
-const ar = {};
-
-export { en, ar };
+export const landingNameSpace = {
+  en: {
+    WELCOME: "Welcome",
+  },
+  ar: {
+    WELCOME: "اهلا",
+  },
+};
