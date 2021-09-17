@@ -5,8 +5,10 @@
 export const landingNameSpace = {
   en: {
     WELCOME: "Welcome",
+    LANDING: "Landing",
   },
   ar: {
     WELCOME: "اهلا",
+    LANDING: "Landing",
   },
 };

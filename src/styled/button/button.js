@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Space } from "antd";
 
-import styles from "./button.module.css";
+import styles from "./button.css";
 
 const sizes = { small: "28px", middle: "38px", large: "50px" };
 
