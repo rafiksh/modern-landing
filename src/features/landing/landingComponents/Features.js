@@ -59,12 +59,10 @@ const FeaturesComponent = () => {
         title={t("FEATURES_TITLE")}
         text={t("FEATURES_SUBTEXT")}
       />
-      {features.map((props) => (
-        <>
-          <Col xs={24} lg={8}>
-            <Card {...props} />
-          </Col>
-        </>
+      {features.map(({ key, ...props }) => (
+        <Col xs={24} lg={8} key={key + 1000}>
+          <Card {...props} />
+        </Col>
       ))}
     </Row>
   );

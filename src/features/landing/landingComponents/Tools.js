@@ -42,9 +42,7 @@ const ToolsComponent = () => {
       <Col xs={24} lg={12}>
         <Title>{t("TOOLS_TITLE")}</Title>
         {tools.map((props) => (
-          <>
-            <Option {...props} Icon={CheckmarkIcon} />
-          </>
+          <Option {...props} Icon={CheckmarkIcon} />
         ))}
         <Row>
           <SecondaryButton Icon={BellIcon} />

@@ -51,14 +51,14 @@ const WorkComponent = () => {
 
       <Col xs={20}>
         <Row justify="space-between" align="middle">
-          {work.map((props) => (
-            <>
+          {work.map(({ key, ...props }) => (
+            <React.Fragment key={key}>
               <Col xs={24} lg={6}>
                 <Row justify="center">
                   <Card {...props} />
                 </Row>
               </Col>
-              {props.key !== work.length && (
+              {key !== work.length && (
                 <>
                   <Col xs={0} lg={2}>
                     <Row justify="center">
@@ -72,7 +72,7 @@ const WorkComponent = () => {
                   </Col>
                 </>
               )}
-            </>
+            </React.Fragment>
           ))}
         </Row>
       </Col>

@@ -44,9 +44,7 @@ const PhotosComponent = () => {
       <Col xs={24} lg={12}>
         <Title>{t("PHOTOS_TITLE")}</Title>
         {photos.map((props) => (
-          <>
-            <Option {...props} />
-          </>
+          <Option {...props} />
         ))}
 
         <PrimaryButton>{t("LEARN_MORE")}</PrimaryButton>

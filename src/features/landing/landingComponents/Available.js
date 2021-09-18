@@ -2,9 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "antd";
 
+import { SectionHeaderCard } from "../../../styled/card/card";
+
 import GooglePlay from "../../../assets/images/google-play.png";
 import AppStore from "../../../assets/images/app-store.png";
-import { SectionHeaderCard } from "../../../styled/card/card";
 
 const AvialableComponent = () => {
   const { t } = useTranslation(["landing"]);

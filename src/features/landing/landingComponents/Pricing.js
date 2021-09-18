@@ -44,11 +44,11 @@ const PricingComponent = () => {
         text={t("PRICING_SUBTEXT")}
       />
       <Row justify="center" align="middle">
-        {pricing.map((props) => (
-          <>
+        {pricing.map(({ key, ...props }) => (
+          <React.Fragment key={key}>
             <PlanCard {...props} />
             {props.key !== pricing.length && <Col xs={0} lg={1}></Col>}
-          </>
+          </React.Fragment>
         ))}
       </Row>
     </Col>
