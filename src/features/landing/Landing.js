@@ -76,7 +76,7 @@ const LandingComponent = () => {
   );
   return (
     <>
-      <Row className="language-header" justify={"end"}>
+      <Row justify={"end"}>
         <LinkButton
           onClick={() => {
             i18n.changeLanguage("en");
@@ -94,17 +94,7 @@ const LandingComponent = () => {
       </Row>
       <Row align="middle" justify="center">
         <Col xs={22}>
-          <Row
-            className="landing-header"
-            justify="space-between"
-            align="middle"
-            style={
-              scrollPosition > 32 && {
-                position: "fixed",
-                top: 0,
-              }
-            }
-          >
+          <Row justify="space-between" align="middle">
             <Col>
               <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#">
                 <SubTitle>{t("LANDING")}</SubTitle>
@@ -132,7 +122,21 @@ const LandingComponent = () => {
           <div style={{ height: "1200px", backgroundColor: "blue" }} />
         </Col>
       </Row>
-
+      {scrollPosition > 32 && (
+        <Button
+          style={
+            scrollPosition > 32 && {
+              position: "fixed",
+              bottom: 10,
+              right: 80,
+            }
+          }
+        >
+          <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#">
+            {t("HOME")}
+          </HashLink>
+        </Button>
+      )}
       <Drawer
         className="landing-drawer"
         closeIcon={<>hi</>}

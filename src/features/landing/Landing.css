@@ -3,9 +3,10 @@
 }
 
 .landing-header {
-  right: 80px;
-  left: 80px;
-  padding: 20px 50px;
+  /* right: 80px;
+  left: 80px; */
+  /* padding: 20px 50px; */
+  /* width: 100%; */
   z-index: 1000;
   background-color: #ffffff !important;
   opacity: 0.9;
