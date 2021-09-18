@@ -1,7 +1,7 @@
 .primary {
   border-radius: 10px;
-  background-color: #4a28dc !important;
-  border-color: #4a28dc !important;
+  background-color: #7d1be1 !important;
+  border-color: #7d1be1 !important;
 
   /* span */
 
@@ -18,7 +18,7 @@
 .secondary {
   border-radius: 10px;
   background-color: #ffffff !important;
-  border-color: #4a28dc !important;
+  border-color: #7d1be1 !important;
 
   /* span */
 
@@ -29,7 +29,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #4a28dc !important;
+  color: #7d1be1 !important;
 }
 
 .primary svg,
@@ -40,8 +40,8 @@
 .primary:hover,
 .primary:active,
 .primary:focus {
-  background-color: #4a28dc !important;
-  border-color: #4a28dc !important;
+  background-color: #7d1be1 !important;
+  border-color: #7d1be1 !important;
   color: #f1f1f5 !important;
   opacity: 0.8;
 }
@@ -50,8 +50,8 @@
 .secondary:active,
 .secondary:focus {
   background-color: #f1f1f5 !important;
-  border-color: #4a28dc !important;
-  color: #4a28dc !important;
+  border-color: #7d1be1 !important;
+  color: #7d1be1 !important;
   opacity: 0.8;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .link > span {
-  color: #4a28dc !important;
+  color: #7d1be1 !important;
   font-size: 18px;
   font-weight: 500;
   font-stretch: normal;

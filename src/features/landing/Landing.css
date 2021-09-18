@@ -30,6 +30,10 @@
   text-align: center !important;
 }
 
+.small-divider {
+  background-color: #7d1be1 !important;
+}
+
 @media screen and (max-width: 414px) {
   .landing-page {
     padding: 0;

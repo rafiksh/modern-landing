@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Col, Drawer, Menu, Row, Button } from "antd";
 import { HashLink } from "react-router-hash-link";
 
-import { HomeComponent } from "./landingComponents";
+import { FeaturesComponent, HomeComponent } from "./landingComponents";
 
 import "./Landing.css";
 import { LinkButton } from "../../styled/button/button";
@@ -117,7 +117,12 @@ const LandingComponent = () => {
         <Col xs={22} lg={18} xl={22}>
           <HomeComponent />
         </Col>
+
+        <Col xs={22} lg={18} xl={22}>
+          <FeaturesComponent />
+        </Col>
       </Row>
+
       {scrollPosition > 32 && (
         <Button
           style={

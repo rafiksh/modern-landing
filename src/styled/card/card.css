@@ -1,0 +1,16 @@
+.card-box {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.card-icon {
+  width: 240px;
+  height: 240px;
+  display: block;
+}
+
+@media only screen and (max-width: 750px) {
+  .card-box {
+    padding-bottom: 50px;
+  }
+}
