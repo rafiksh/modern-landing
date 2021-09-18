@@ -29,4 +29,32 @@ const Option = (props) => {
   );
 };
 
-export { Card, Option };
+const PlanCard = ({ Icon, title, price, featureList, color }) => {
+  return (
+    <Row className="plan-box" justify="center">
+      {Icon && <Icon />}
+      <Col xs={24}>
+        <Row justify="center">
+          {title && <SubTitle color={color}>{title}</SubTitle>}
+        </Row>
+      </Col>
+      {price && <SubTitle color={"#7d1be1"}>{price}</SubTitle>}
+      {featureList.map(({ key, text }) => (
+        <Col xs={24} key={key}>
+          <Row justify="center">
+            <Paragraph>{text}</Paragraph>
+            <Col xs={24}>
+              <Row justify="center">
+                {key !== featureList.length && (
+                  <Col xs={18} className="small-divider-white" />
+                )}
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      ))}
+    </Row>
+  );
+};
+
+export { Card, Option, PlanCard };

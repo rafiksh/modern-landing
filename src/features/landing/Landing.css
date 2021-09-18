@@ -32,9 +32,14 @@
 
 .small-divider {
   background-color: #7d1be1 !important;
+  height: 2px;
 }
 
-.work-box {
+.tools-container,
+.plans-container {
+  background-color: #f6f9fe;
+}
+.work-container {
   background: rgb(83, 54, 222);
   background: linear-gradient(
     90deg,

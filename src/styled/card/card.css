@@ -4,11 +4,22 @@
 }
 
 .card-icon {
-  width: 200px;
-  height: 200px;
+  width: 150px !important;
+  height: 150px !important;
   display: block;
 }
 
+.small-divider-white {
+  background-color: #ececec !important;
+  height: 2px;
+}
+
+.plan-box {
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px #afafaf !important;
+}
 .option-box {
   padding-bottom: 15px;
 }

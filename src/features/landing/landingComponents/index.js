@@ -4,6 +4,7 @@ import { ToolsComponent } from "./Tools";
 import { PhotosComponent } from "./Photos";
 import { WorkComponent } from "./Work";
 import { AvialableComponent } from "./Available";
+import { PlansComponent } from "./Plans";
 
 export {
   HomeComponent,
@@ -12,4 +13,5 @@ export {
   PhotosComponent,
   WorkComponent,
   AvialableComponent,
+  PlansComponent,
 };

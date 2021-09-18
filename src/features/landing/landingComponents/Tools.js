@@ -33,7 +33,7 @@ const ToolsComponent = () => {
     },
   ];
   return (
-    <Row id="tools" align="top">
+    <Row id="tools" align="top" className="tools-container">
       <Col lg={12}>
         <Row justify="center">
           <img src={ThumbThree} alt="img" />

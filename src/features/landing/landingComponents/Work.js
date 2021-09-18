@@ -12,7 +12,7 @@ const WorkComponent = () => {
   const { t } = useTranslation(["landing"]);
 
   return (
-    <Row id="work" justify="center" className="work-box">
+    <Row id="work" justify="center" className="work-container">
       <Col xs={24}>
         <Row justify="center">
           <Title color="white">{t("WORK_TITLE")}</Title>
