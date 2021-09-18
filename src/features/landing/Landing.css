@@ -33,6 +33,7 @@
 .small-divider {
   background-color: #7d1be1 !important;
   height: 2px;
+  width: 150px;
 }
 
 .tools-container,

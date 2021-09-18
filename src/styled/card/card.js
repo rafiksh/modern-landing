@@ -1,12 +1,33 @@
 import React from "react";
 import { Row, Col, Space } from "antd";
 
-import { Paragraph, SubTitle } from "../typography/typography";
+import { Title, Paragraph, SubTitle } from "../typography/typography";
 
 import "./card.css";
 
-const Card = (props) => {
-  const { Icon, title, text, color } = props;
+const SectionHeaderCard = ({ title, text, color }) => {
+  return (
+    <>
+      <Col xs={24}>
+        <Row justify="center">
+          <Title color={color}>{title}</Title>
+        </Row>
+      </Col>
+      <Col xs={24}>
+        <Row justify="center">
+          <Col className="small-divider" />
+        </Row>
+      </Col>
+      <Col xs={24}>
+        <Row justify="center">
+          <Paragraph color={color}>{text}</Paragraph>
+        </Row>
+      </Col>
+    </>
+  );
+};
+
+const Card = ({ Icon, title, text, color }) => {
   return (
     <Row className={"card-box"} justify="center">
       <Space direction="vertical" align="center">
@@ -18,8 +39,7 @@ const Card = (props) => {
   );
 };
 
-const Option = (props) => {
-  const { Icon, text } = props;
+const Option = ({ Icon, text }) => {
   return (
     <Row className="option-box" justify="start" align="middle">
       <Icon className="option-icon" />
@@ -57,4 +77,4 @@ const PlanCard = ({ Icon, title, price, featureList, color }) => {
   );
 };
 
-export { Card, Option, PlanCard };
+export { SectionHeaderCard, Card, Option, PlanCard };

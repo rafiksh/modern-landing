@@ -2,8 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "antd";
 
-import { Card } from "../../../styled/card/card";
-import { Title, Paragraph } from "../../../styled/typography/typography";
+import { Card, SectionHeaderCard } from "../../../styled/card/card";
 
 import DownloadIcon from "../../../assets/images/download.png";
 import { ReactComponent as ArrowRightIcon } from "../../../assets/images/right-arrow.svg";
@@ -13,16 +12,12 @@ const WorkComponent = () => {
 
   return (
     <Row id="work" justify="center" className="work-container">
-      <Col xs={24}>
-        <Row justify="center">
-          <Title color="white">{t("WORK_TITLE")}</Title>
-        </Row>
-      </Col>
-      <Col xs={24}>
-        <Row justify="center">
-          <Paragraph color="white">{t("WORK_SUBTEXT")}</Paragraph>
-        </Row>
-      </Col>
+      <SectionHeaderCard
+        color="white"
+        title={t("WORK_TITLE")}
+        text={t("WORK_SUBTEXT")}
+      />
+
       <Col xs={20}>
         <Row justify="space-between" align="middle">
           <Col>

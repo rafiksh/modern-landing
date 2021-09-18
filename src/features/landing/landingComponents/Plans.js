@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Row, Col } from "antd";
 
 import { Title, Paragraph } from "../../../styled/typography/typography";
-import { PlanCard } from "../../../styled/card/card";
+import { PlanCard, SectionHeaderCard } from "../../../styled/card/card";
 
 import MotorBike from "../../../assets/images/motorbike.png";
 import Bike from "../../../assets/images/bike.png";
@@ -40,18 +40,9 @@ const PlansComponent = () => {
 
   return (
     <>
-      <Col className="plans-container">
-        <Row id="plans" justify="center">
-          <Col>
-            <Title>{t("PLANS_TITLE")}</Title>
-            <Row justify="center">
-              <Col xs={8} className="small-divider" />
-            </Row>
-            <Row justify="center">
-              <Paragraph>{t("PLANS_SUBTEXT")}</Paragraph>
-            </Row>
-          </Col>
-        </Row>
+      <Col id="plans" className="plans-container">
+        <SectionHeaderCard title={t("PLANS_TITLE")} text={t("PLANS_SUBTEXT")} />
+
         <Row justify="center" align="middle">
           {plans.map((props) => (
             <>

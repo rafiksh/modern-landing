@@ -11,6 +11,7 @@ import {
   WorkComponent,
   AvialableComponent,
   PlansComponent,
+  ContactComponent,
 } from "./landingComponents";
 
 import "./Landing.css";
@@ -150,6 +151,10 @@ const LandingComponent = () => {
 
         <Col xs={22} lg={18} xl={22}>
           <AvialableComponent />
+        </Col>
+
+        <Col xs={22} lg={18} xl={22}>
+          <ContactComponent />
         </Col>
       </Row>
 

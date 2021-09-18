@@ -5,6 +5,7 @@ import { PhotosComponent } from "./Photos";
 import { WorkComponent } from "./Work";
 import { AvialableComponent } from "./Available";
 import { PlansComponent } from "./Plans";
+import { ContactComponent } from "./Contact";
 
 export {
   HomeComponent,
@@ -14,4 +15,5 @@ export {
   WorkComponent,
   AvialableComponent,
   PlansComponent,
+  ContactComponent,
 };
