@@ -47,10 +47,12 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .tools-container,
 .plans-container {
   background-color: #f6f9fe;
 }
+
 .work-container {
   background: rgb(83, 54, 222);
   background: linear-gradient(

@@ -2,10 +2,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "antd";
 
-import { Title, Paragraph } from "../../../styled/typography/typography";
-
 import GooglePlay from "../../../assets/images/google-play.png";
 import AppStore from "../../../assets/images/app-store.png";
+import { SectionHeaderCard } from "../../../styled/card/card";
 
 const AvialableComponent = () => {
   const { t } = useTranslation(["landing"]);
@@ -17,16 +16,12 @@ const AvialableComponent = () => {
       align="middle"
       className="avialable-container"
     >
-      <Col xs={24}>
-        <Row justify="center">
-          <Title color="white">{t("AVIALABLE_TITLE")}</Title>
-        </Row>
-      </Col>
-      <Col xs={24}>
-        <Row justify="center">
-          <Paragraph color="white">{t("AVIALABLE_PARAGRAPH")}</Paragraph>
-        </Row>
-      </Col>
+      <SectionHeaderCard
+        title={t("AVIALABLE_TITLE")}
+        text={t("AVIALABLE_PARAGRAPH")}
+        color="white"
+      />
+
       <Col xs={24}>
         <Row justify="center">
           <img src={GooglePlay} alt="googleplay" />

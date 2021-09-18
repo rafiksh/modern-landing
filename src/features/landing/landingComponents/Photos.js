@@ -18,23 +18,23 @@ const PhotosComponent = () => {
   const photos = [
     {
       key: 1,
-      text: t("PHOTOS_1"),
+      text: t("PHOTO_1"),
       Icon: () => <SecondaryButton Icon={LayersIcon} />,
     },
     {
       key: 2,
-      text: t("PHOTOS_2"),
+      text: t("PHOTO_2"),
       Icon: () => <SecondaryButton Icon={BrushIcon} />,
     },
     {
       key: 3,
-      text: t("PHOTOS_3"),
+      text: t("PHOTO_3"),
 
       Icon: () => <SecondaryButton Icon={DropIcon} />,
     },
     {
       key: 4,
-      text: t("PHOTOS_4"),
+      text: t("PHOTO_4"),
 
       Icon: () => <SecondaryButton Icon={CartIcon} />,
     },

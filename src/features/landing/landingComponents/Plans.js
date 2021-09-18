@@ -15,7 +15,7 @@ const PlansComponent = () => {
       key: 1,
       Icon: () => <img src={MotorBike} alt="bike" className="card-icon" />,
       title: t("BASIC"),
-      price: t("48"),
+      price: t("BASIC_PRICE"),
       featureList: [
         { key: 1, text: t("BASIC_1") },
         { key: 2, text: t("BASIC_2") },
@@ -27,7 +27,7 @@ const PlansComponent = () => {
       key: 2,
       Icon: () => <img src={Bike} alt="bike" className="card-icon" />,
       title: t("PRO"),
-      price: t("48"),
+      price: t("PRO_PRICE"),
       featureList: [
         { key: 1, text: t("PRO_1") },
         { key: 2, text: t("PRO_2") },

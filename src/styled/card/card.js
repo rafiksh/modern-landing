@@ -13,11 +13,13 @@ const SectionHeaderCard = ({ title, text, color }) => {
           <Title color={color}>{title}</Title>
         </Row>
       </Col>
-      <Col xs={24}>
-        <Row justify="center">
-          <Col className="small-divider" />
-        </Row>
-      </Col>
+      {!color && (
+        <Col xs={24}>
+          <Row justify="center">
+            <Col className="small-divider" />
+          </Row>
+        </Col>
+      )}
       <Col xs={24}>
         <Row justify="center">
           <Paragraph color={color}>{text}</Paragraph>

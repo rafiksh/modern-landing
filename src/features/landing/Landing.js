@@ -13,10 +13,9 @@ import {
   PlansComponent,
   ContactComponent,
 } from "./landingComponents";
+import { LinkButton } from "../../styled/button/button";
 
 import "./Landing.css";
-import { LinkButton } from "../../styled/button/button";
-import { SubTitle } from "../../styled/typography/typography";
 
 const LandingComponent = () => {
   const { t, i18n } = useTranslation(["landing"]);
@@ -89,7 +88,6 @@ const LandingComponent = () => {
         <LinkButton
           onClick={() => {
             i18n.changeLanguage("en");
-            window.location.reload();
           }}
         >
           English
@@ -97,7 +95,6 @@ const LandingComponent = () => {
         <LinkButton
           onClick={() => {
             i18n.changeLanguage("ar");
-            window.location.reload();
           }}
         >
           العربية
@@ -105,12 +102,7 @@ const LandingComponent = () => {
       </Row>
       <Row align="middle" justify="center">
         <Col xs={22}>
-          <Row justify="space-between" align="middle">
-            <Col>
-              <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#">
-                <SubTitle>{t("LANDING")}</SubTitle>
-              </HashLink>
-            </Col>
+          <Row justify="end" align="middle">
             <Col>
               {width > 1230 && (
                 <Menu mode="horizontal" className="landing-navbar">
@@ -163,8 +155,8 @@ const LandingComponent = () => {
           style={
             scrollPosition > 32 && {
               position: "fixed",
-              bottom: 10,
-              right: 80,
+              bottom: 30,
+              right: 0,
             }
           }
         >

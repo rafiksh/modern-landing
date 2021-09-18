@@ -13,38 +13,38 @@ const FeaturesComponent = () => {
     {
       key: 1,
       Icon: HomeLogo,
-      title: t("HOME_FEAT"),
-      text: t("HOME_TEXT"),
+      title: t("FEATURE_1_TITLE"),
+      text: t("FEATURE_1_TEXT"),
     },
     {
       key: 2,
       Icon: HomeLogo,
-      title: t("HOME_FEAT"),
-      text: t("HOME_TEXT"),
+      title: t("FEATURE_2_TITLE"),
+      text: t("FEATURE_2_TEXT"),
     },
     {
       key: 3,
       Icon: HomeLogo,
-      title: t("HOME_FEAT"),
-      text: t("HOME_TEXT"),
+      title: t("FEATURE_3_TITLE"),
+      text: t("FEATURE_3_TEXT"),
     },
     {
       key: 4,
       Icon: HomeLogo,
-      title: t("HOME_FEAT"),
-      text: t("HOME_TEXT"),
+      title: t("FEATURE_4_TITLE"),
+      text: t("FEATURE_4_TEXT"),
     },
     {
       key: 5,
       Icon: HomeLogo,
-      title: t("HOME_FEAT"),
-      text: t("HOME_TEXT"),
+      title: t("FEATURE_5_TITLE"),
+      text: t("FEATURE_5_TEXT"),
     },
     {
       key: 6,
       Icon: HomeLogo,
-      title: t("HOME_FEAT"),
-      text: t("HOME_TEXT"),
+      title: t("FEATURE_6_TITLE"),
+      text: t("FEATURE_6_TEXT"),
     },
   ];
 
@@ -56,10 +56,9 @@ const FeaturesComponent = () => {
       align="middle"
     >
       <SectionHeaderCard
-        title={t("CONTACT_TITLE")}
-        text={t("CONTACT_SUBTEXT")}
+        title={t("FEATURES_TITLE")}
+        text={t("FEATURES_SUBTEXT")}
       />
-
       {features.map((props) => (
         <>
           <Col xs={8}>

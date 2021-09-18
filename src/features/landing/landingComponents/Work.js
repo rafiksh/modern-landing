@@ -10,6 +10,36 @@ import { ReactComponent as ArrowRightIcon } from "../../../assets/images/right-a
 const WorkComponent = () => {
   const { t } = useTranslation(["landing"]);
 
+  const work = [
+    {
+      key: 1,
+      color: "white",
+      Icon: () => (
+        <img src={DownloadIcon} alt="download" className="card-icon" />
+      ),
+      title: t("STEP_ONE_TITLE"),
+      text: t("STEP_ONE_TEXT"),
+    },
+    {
+      key: 2,
+      color: "white",
+      Icon: () => (
+        <img src={DownloadIcon} alt="download" className="card-icon" />
+      ),
+      title: t("STEP_TWO_TITLE"),
+      text: t("STEP_TWO_TEXT"),
+    },
+    {
+      key: 3,
+      color: "white",
+      Icon: () => (
+        <img src={DownloadIcon} alt="download" className="card-icon" />
+      ),
+      title: t("STEP_THREE_TITLE"),
+      text: t("STEP_THREE_TEXT"),
+    },
+  ];
+
   return (
     <Row id="work" justify="center" className="work-container">
       <SectionHeaderCard
@@ -20,43 +50,18 @@ const WorkComponent = () => {
 
       <Col xs={20}>
         <Row justify="space-between" align="middle">
-          <Col>
-            <Card
-              color="white"
-              Icon={() => (
-                <img src={DownloadIcon} alt="download" className="card-icon" />
+          {work.map((props) => (
+            <>
+              <Col>
+                <Card {...props} />
+              </Col>
+              {props.key !== work.length && (
+                <Col>
+                  <ArrowRightIcon style={{ width: 75, height: 75 }} />
+                </Col>
               )}
-              title={t("STEP_ONE_TITLE")}
-              text={t("STEP_ONE_TEXT")}
-            />
-          </Col>
-
-          <Col>
-            <ArrowRightIcon style={{ width: 75, height: 75 }} />
-          </Col>
-          <Col>
-            <Card
-              color="white"
-              Icon={() => (
-                <img src={DownloadIcon} alt="download" className="card-icon" />
-              )}
-              title={t("STEP_ONE_TITLE")}
-              text={t("STEP_ONE_TEXT")}
-            />
-          </Col>
-          <Col>
-            <ArrowRightIcon style={{ width: 75, height: 75 }} />
-          </Col>
-          <Col>
-            <Card
-              color="white"
-              Icon={() => (
-                <img src={DownloadIcon} alt="download" className="card-icon" />
-              )}
-              title={t("STEP_ONE_TITLE")}
-              text={t("STEP_ONE_TEXT")}
-            />
-          </Col>
+            </>
+          ))}
         </Row>
       </Col>
     </Row>
