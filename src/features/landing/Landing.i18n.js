@@ -92,7 +92,7 @@ export const landingNameSpace = {
       "Consequat deserunt deserunt tempor reprehenderit deserunt tempor minim dolore velit consectetur officia minim excepteur sit. Cillum dolore culpa qui amet aute anim qui laboris. Sunt aute minim occaecat aute pariatur. Nostrud anim ullamco sint cupidatat in esse exercitation. ",
     CONTACT_ADDRESS: "Beirut, Lebanon",
     CONTACT_MOBILE: "+96170787532",
-    CONTACT_EMAIL: "rafikshmoury@gmail.co,",
+    CONTACT_EMAIL: "rafikshmoury@gmail.com",
     NAME: "Name",
     EMAIL: "Email",
     SUBJECT: "Subject",
