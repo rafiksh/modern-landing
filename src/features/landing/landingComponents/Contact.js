@@ -2,14 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "antd";
 
-import { Title, Paragraph } from "../../../styled/typography/typography";
-import { SecondaryButton } from "../../../styled/button/button";
-import { Option, SectionHeaderCard } from "../../../styled/card/card";
-
-import ThumbThree from "../../../assets/images/thumb-3.png";
-import { ReactComponent as CheckmarkIcon } from "../../../assets/images/checkmark.svg";
-import { ReactComponent as BellIcon } from "../../../assets/images/alarm.svg";
-import { ReactComponent as VideoIcon } from "../../../assets/images/video.svg";
+import { SectionHeaderCard } from "../../../styled/card/card";
 
 const ContactComponent = () => {
   const { t } = useTranslation(["landing"]);

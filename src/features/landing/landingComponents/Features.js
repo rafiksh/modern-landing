@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Row, Col } from "antd";
 
 import { Card, SectionHeaderCard } from "../../../styled/card/card";
-import { Title, Paragraph } from "../../../styled/typography/typography";
 
 import { ReactComponent as HomeLogo } from "../../../assets/images/home.svg";
 

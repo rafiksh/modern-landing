@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "antd";
 
-import { Title, Paragraph } from "../../../styled/typography/typography";
 import { PlanCard, SectionHeaderCard } from "../../../styled/card/card";
 
 import MotorBike from "../../../assets/images/motorbike.png";
