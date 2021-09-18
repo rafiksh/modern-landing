@@ -1,8 +1,13 @@
 .primary {
   border-radius: 10px;
-  background-color: #7d1be1 !important;
-  border-color: #7d1be1 !important;
 
+  background: rgb(83, 54, 222) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(83, 54, 222, 1) 0%,
+    rgba(105, 56, 226, 1) 50%,
+    rgba(127, 61, 229, 1) 100%
+  ) !important;
   /* span */
 
   font-size: 18px;

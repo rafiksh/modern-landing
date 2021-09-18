@@ -8,6 +8,8 @@ import {
   HomeComponent,
   ToolsComponent,
   PhotosComponent,
+  WorkComponent,
+  AvialableComponent,
 } from "./landingComponents";
 
 import "./Landing.css";
@@ -85,6 +87,7 @@ const LandingComponent = () => {
         <LinkButton
           onClick={() => {
             i18n.changeLanguage("en");
+            window.location.reload();
           }}
         >
           English
@@ -92,6 +95,7 @@ const LandingComponent = () => {
         <LinkButton
           onClick={() => {
             i18n.changeLanguage("ar");
+            window.location.reload();
           }}
         >
           العربية
@@ -133,6 +137,13 @@ const LandingComponent = () => {
 
         <Col xs={22} lg={18} xl={22}>
           <PhotosComponent />
+        </Col>
+
+        <Col xs={22} lg={18} xl={22}>
+          <WorkComponent />
+        </Col>
+        <Col xs={22} lg={18} xl={22}>
+          <AvialableComponent />
         </Col>
       </Row>
 

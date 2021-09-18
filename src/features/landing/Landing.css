@@ -34,6 +34,30 @@
   background-color: #7d1be1 !important;
 }
 
+.work-box {
+  background: rgb(83, 54, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(83, 54, 222, 1) 0%,
+    rgba(105, 56, 226, 1) 50%,
+    rgba(127, 61, 229, 1) 100%
+  );
+}
+
+.avialable-box {
+}
+
+.avialable-box::before {
+  content: "";
+  opacity: 0.8;
+  background-image: url("../../assets//images/download-bg.jpg");
+  z-index: -100;
+  background-size: cover;
+  position: absolute;
+  width: 100% !important;
+  height: 100%;
+}
+
 @media screen and (max-width: 414px) {
   .landing-page {
     padding: 0;
