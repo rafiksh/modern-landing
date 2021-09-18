@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Space } from "antd";
+import { Row, Col, Space } from "antd";
 
 import { Paragraph, SubTitle } from "../typography/typography";
 
@@ -18,4 +18,15 @@ const Card = (props) => {
   );
 };
 
-export { Card };
+const Option = (props) => {
+  const { Icon, text } = props;
+  return (
+    <Row className="option-box" justify="start" align="middle">
+      <Icon className="option-icon" />
+      <Col xs={1} />
+      <Paragraph>{text}</Paragraph>
+    </Row>
+  );
+};
+
+export { Card, Option };

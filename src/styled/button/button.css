@@ -14,7 +14,10 @@
   text-align: center;
   color: #ffffff !important;
 }
-
+.button-icon {
+  width: 35px;
+  height: 35px;
+}
 .secondary {
   border-radius: 10px;
   background-color: #ffffff !important;

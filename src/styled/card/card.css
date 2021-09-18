@@ -9,6 +9,16 @@
   display: block;
 }
 
+.option-box {
+  padding-bottom: 15px;
+}
+
+.option-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
 @media only screen and (max-width: 750px) {
   .card-box {
     padding-bottom: 50px;

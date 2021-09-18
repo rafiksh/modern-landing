@@ -14,10 +14,10 @@ const PrimaryButton = ({ size = "large", icon, children, ...props }) => (
   </Button>
 );
 
-const SecondaryButton = ({ size = "large", icon, children, ...props }) => (
+const SecondaryButton = ({ size = "large", Icon, children, ...props }) => (
   <Button style={{ height: sizes[size] }} className={"secondary"} {...props}>
     <Space direction="horizontal">
-      {icon}
+      <Icon className="button-icon" />
       {children}
     </Space>
   </Button>
