@@ -97,6 +97,7 @@
 /* MENU Styling */
 .ant-menu {
   background-color: #0000;
+  font-weight: 800;
 }
 
 .ant-menu-horizontal > .ant-menu-item a:hover {

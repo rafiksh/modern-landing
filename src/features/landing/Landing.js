@@ -60,20 +60,19 @@ const LandingComponent = () => {
           {t("FEATURES")}
         </HashLink>
       </Menu.Item>
-      <Menu.Item key="photos">
-        <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#photos">
-          {t("PHOTOS")}
-        </HashLink>
-      </Menu.Item>
-      <Menu.Item key="screenshots">
-        <HashLink
-          scroll={(el) => scrollWithOffset(el)}
-          smooth
-          to="#screenshots"
-        >
-          {t("SCREENSHOTS")}
-        </HashLink>
-      </Menu.Item>
+      <Menu.SubMenu key="photos" title={t("PHOTOS")}>
+        <Menu.Item>
+          <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#photos">
+            {t("PHOTOS")}
+          </HashLink>
+        </Menu.Item>
+        <Menu.Item>
+          <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#photos">
+            {t("CAMERA")}
+          </HashLink>
+        </Menu.Item>
+      </Menu.SubMenu>
+
       <Menu.Item key="pricing">
         <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#pricing">
           {t("PRICING")}

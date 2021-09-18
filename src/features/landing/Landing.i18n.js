@@ -98,6 +98,7 @@ export const landingNameSpace = {
     SUBJECT: "Subject",
     MESSAGE: "Message",
     SEND_MESSAGE: "Send Message",
+    CAMERA: "Camera",
   },
   ar: {
     HOME: "الصفحة الرئيسية",
@@ -106,6 +107,7 @@ export const landingNameSpace = {
     SCREENSHOTS: "لقطات",
     PRICING: "التسعير",
     CONTACT: "الاتصال",
+    CAMERA: "كاميرا",
 
     HOME_TITLE: "طريقة مبتكرة لإظهار التطبيق الخاص بك",
     HOME_PARAGRAPH:
