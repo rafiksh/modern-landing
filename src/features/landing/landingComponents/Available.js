@@ -15,7 +15,7 @@ const AvialableComponent = () => {
       id="avialable"
       justify="center"
       align="middle"
-      className="avialable-box"
+      className="avialable-container"
     >
       <Col xs={24}>
         <Row justify="center">

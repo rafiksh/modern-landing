@@ -11,7 +11,12 @@ const HomeComponent = () => {
   const { t } = useTranslation(["landing"]);
 
   return (
-    <Row id="home" justify="space-between" align="middle">
+    <Row
+      id="home"
+      className="home-container"
+      justify="space-between"
+      align="middle"
+    >
       <Col>
         <Title>{t("HOME_TITLE")}</Title>
         <Col>

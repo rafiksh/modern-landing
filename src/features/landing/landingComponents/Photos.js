@@ -40,7 +40,7 @@ const PhotosComponent = () => {
     },
   ];
   return (
-    <Row id="photos" align="top">
+    <Row id="photos" align="top" className="photos-container">
       <Col lg={12}>
         <Title>{t("PHOTOS_TITLE")}</Title>
         {photos.map((props) => (

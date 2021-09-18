@@ -38,20 +38,18 @@ const PlansComponent = () => {
   ];
 
   return (
-    <>
-      <Col id="plans" className="plans-container">
-        <SectionHeaderCard title={t("PLANS_TITLE")} text={t("PLANS_SUBTEXT")} />
+    <Col id="plans" className="plans-container">
+      <SectionHeaderCard title={t("PLANS_TITLE")} text={t("PLANS_SUBTEXT")} />
 
-        <Row justify="center" align="middle">
-          {plans.map((props) => (
-            <>
-              <PlanCard {...props} />
-              {props.key !== plans.length && <Col xs={1}></Col>}
-            </>
-          ))}
-        </Row>
-      </Col>
-    </>
+      <Row justify="center" align="middle">
+        {plans.map((props) => (
+          <>
+            <PlanCard {...props} />
+            {props.key !== plans.length && <Col xs={1}></Col>}
+          </>
+        ))}
+      </Row>
+    </Col>
   );
 };
 

@@ -49,7 +49,12 @@ const FeaturesComponent = () => {
   ];
 
   return (
-    <Row id="features" justify="space-between" align="middle">
+    <Row
+      id="features"
+      className="features-container"
+      justify="space-between"
+      align="middle"
+    >
       <SectionHeaderCard
         title={t("CONTACT_TITLE")}
         text={t("CONTACT_SUBTEXT")}

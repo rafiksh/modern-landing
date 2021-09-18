@@ -36,6 +36,17 @@
   width: 150px;
 }
 
+.avialable-container,
+.contact-container,
+.features-container,
+.home-container,
+.photos-container,
+.plans-container,
+.tools-container,
+.work-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .tools-container,
 .plans-container {
   background-color: #f6f9fe;
@@ -50,10 +61,7 @@
   );
 }
 
-.avialable-box {
-}
-
-.avialable-box::before {
+.avialable-container::before {
   content: "";
   opacity: 0.8;
   background-image: url("../../assets//images/download-bg.jpg");
