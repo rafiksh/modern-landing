@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Col, Drawer, Menu, Row, Button } from "antd";
 import { HashLink } from "react-router-hash-link";
 
-import { AboutComponent } from "./landingComponents";
+import { HomeComponent } from "./landingComponents";
 
 import "./Landing.css";
 import { LinkButton } from "../../styled/button/button";
@@ -115,11 +115,7 @@ const LandingComponent = () => {
         </Col>
 
         <Col xs={22} lg={18} xl={22}>
-          <div style={{ height: "1200px", backgroundColor: "red" }} />
-        </Col>
-
-        <Col xs={22} lg={18} xl={16}>
-          <div style={{ height: "1200px", backgroundColor: "blue" }} />
+          <HomeComponent />
         </Col>
       </Row>
       {scrollPosition > 32 && (

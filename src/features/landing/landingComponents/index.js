@@ -1,3 +1,3 @@
-import { AboutComponent } from "./About";
+import { HomeComponent } from "./Home";
 
-export { AboutComponent };
+export { HomeComponent };
