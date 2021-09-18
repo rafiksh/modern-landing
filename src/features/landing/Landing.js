@@ -92,46 +92,46 @@ const LandingComponent = () => {
           العربية
         </LinkButton>
       </Row>
-      <div className="landing-page">
-        <Row
-          className="landing-header"
-          justify="space-between"
-          align="middle"
-          style={
-            scrollPosition > 32 && {
-              position: "fixed",
-              top: 0,
+      <Row align="middle" justify="center">
+        <Col xs={22}>
+          <Row
+            className="landing-header"
+            justify="space-between"
+            align="middle"
+            style={
+              scrollPosition > 32 && {
+                position: "fixed",
+                top: 0,
+              }
             }
-          }
-        >
-          <Col>
-            <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#">
-              <SubTitle>{t("LANDING")}</SubTitle>
-            </HashLink>
-          </Col>
-          <Col>
-            {width > 1230 && (
-              <Menu mode="horizontal" className="landing-navbar">
-                {renderMenuItems()}
-              </Menu>
-            )}
+          >
+            <Col>
+              <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#">
+                <SubTitle>{t("LANDING")}</SubTitle>
+              </HashLink>
+            </Col>
+            <Col>
+              {width > 1230 && (
+                <Menu mode="horizontal" className="landing-navbar">
+                  {renderMenuItems()}
+                </Menu>
+              )}
 
-            {width <= 1230 && (
-              <Button onClick={() => setIsDrawerOpen(true)}>Bye</Button>
-            )}
-          </Col>
-        </Row>
-
-        <Col xs={24} id="home">
-          <div style={{ height: 100, backgroundColor: "red" }}></div>
+              {width <= 1230 && (
+                <Button onClick={() => setIsDrawerOpen(true)}>Bye</Button>
+              )}
+            </Col>
+          </Row>
         </Col>
 
-        <div style={{ height: "1200px" }} />
-        <div id="pricing"></div>
+        <Col xs={22} lg={18} xl={22}>
+          <div style={{ height: "1200px", backgroundColor: "red" }} />
+        </Col>
 
-        <div style={{ height: "1200px" }} />
-        {/* </Col> */}
-      </div>
+        <Col xs={22} lg={18} xl={16}>
+          <div style={{ height: "1200px", backgroundColor: "blue" }} />
+        </Col>
+      </Row>
 
       <Drawer
         className="landing-drawer"
