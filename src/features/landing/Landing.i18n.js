@@ -4,11 +4,9 @@
  */
 export const landingNameSpace = {
   en: {
-    WELCOME: "Welcome",
-
     HOME: "Home",
     FEATURES: "Features",
-    PAGES: "Pages",
+    PHOTOS: "Photos",
     SCREENSHOTS: "ScreenShots",
     PRICING: "Pricing",
     CONTACT: "Contact",
@@ -67,8 +65,8 @@ export const landingNameSpace = {
     STEP_THREE_TITLE: "Enjoy the features",
     STEP_THREE_TEXT: "Adipisicing duis officia ut aliqua amet.",
 
-    PLANS_TITLE: "Pricing",
-    PLANS_SUBTEXT:
+    PRICING_TITLE: "Pricing",
+    PRICING_SUBTEXT:
       "Duis aliquip consectetur culpa velit nulla mollit id ut ea deserunt officia dolor.",
     BASIC: "Basic",
     BASIC_PRICE: "$59",
@@ -77,7 +75,7 @@ export const landingNameSpace = {
     BASIC_3: "24/7 Tech Support",
     BASIC_4: "Daily Backups",
     PRO: "PRO",
-    PRO_PRICE: "99",
+    PRO_PRICE: "$99",
     PRO_1: "10GB Linux Web Space",
     PRO_2: "50 MySQL Databases",
     PRO_3: "Unlimited Email",
@@ -102,7 +100,99 @@ export const landingNameSpace = {
     SEND_MESSAGE: "Send Message",
   },
   ar: {
-    WELCOME: "اهلا",
-    LANDING: "Landing",
+    HOME: "الصفحة الرئيسية",
+    FEATURES: "سمات",
+    PHOTOS: "الصفحات",
+    SCREENSHOTS: "لقطات",
+    PRICING: "التسعير",
+    CONTACT: "الاتصال",
+
+    HOME_TITLE: "طريقة مبتكرة لإظهار التطبيق الخاص بك",
+    HOME_PARAGRAPH:
+      "نشىسينمىىم ىسنميىسى ينمشسىم سىينمسىي ىشسنميىنمسيمسنى ينمشسينم",
+    GET_STARTED: "البدء",
+
+    FEATURES_TITLE: "سمات",
+    FEATURES_SUBTEXT:
+      "شلاسيلااشلالاشم لاالاشسشس  ي شسلالشسالاسلاسشتيستشىتشىتسشىب ",
+    FEATURE_1_TITLE: "تعمل بكامل طاقتها",
+    FEATURE_1_TEXT: "ستأتي أهدافنا العمالية.",
+    FEATURE_2_TITLE: "تتبع الموقع",
+    FEATURE_2_TEXT: "لساصرصيلارم اصضا صراصصضا اضصحلاصيلالابلاثلا",
+    FEATURE_3_TITLE: "تعمل بكامل طاقتها",
+    FEATURE_3_TEXT: "لايلاانيلام الاسلايالاس تاسلاشتسلاتشسلا تشسيتلات",
+    FEATURE_4_TITLE: "إعدادات الطاقة",
+    FEATURE_4_TEXT:
+      "لاامبلااملام يالاشيسلايسلا الايسبالايالاي لاايلاالابالاي لاياسلاايلايالايلايب لاايلاايسيلا",
+    FEATURE_5_TITLE: "إعدادات الطاقة",
+    FEATURE_5_TEXT: "يسايلاسبلا رسلا ايلايلاييلا",
+    FEATURE_6_TITLE: "تعمل بكامل طاقتها",
+    FEATURE_6_TEXT:
+      "الاثباغبلاخثبصاعبثص ااثلابثصاخثبلاثبلاببلثصخب ثصلغثصلثثب ثصبثبلخثثبخثبصل",
+
+    TOOLS_TITLE: "اعمل بشكل أسرع باستخدام الأدوات القوية.",
+    TOOLS_1:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلاس",
+    TOOLS_2:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    TOOLS_3:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    TOOLS_4:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+
+    PHOTOS_TITLE: "الصور",
+    PHOTO_1:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    PHOTO_2:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    PHOTO_3:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    PHOTO_4:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    LEARN_MORE: "يتعلم أكثر",
+
+    WORK_TITLE: "كيف تعمل",
+    WORK_SUBTEXT: "عيساشيباايلايبلايبيبربايي بيلايبليبالي",
+    STEP_ONE_TITLE: "تثبيت التطبيق",
+    STEP_ONE_TEXT:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    STEP_TWO_TITLE: "قم بإعداد ملف التعريف الخاص بك",
+    STEP_TWO_TEXT: "تىيبتىتي تيلاىبتىيب تيت ر يت ي",
+    STEP_THREE_TITLE: "استمتع بالمميزات",
+    STEP_THREE_TEXT: "لابيملايسالا لايتبلاتيبس تلاتلايبتلا",
+
+    PRICING_TITLE: "التسعير",
+    PRICING_SUBTEXT:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    BASIC: "أساسي",
+    BASIC_PRICE: "$59",
+    BASIC_1: "مساحة ويب لينكس 5 جيجا",
+    BASIC_2: "5 قواعد بيانات تيلاياي",
+    BASIC_3: "24/7 دعم فني",
+    BASIC_4: "النسخ الاحتياطية اليومية",
+    PRO: "محترف",
+    PRO_PRICE: "$99",
+    PRO_1: "10 جيجا مساحة لينكس ويب",
+    PRO_2: "50 قواعد بيانات MySQL",
+    PRO_3: "بريد إلكتروني غير محدود",
+    PRO_4: "النسخ الاحتياطية اليومي",
+
+    AVIALABLE_TITLE: "نحن متواجدون على جميع الأجهزة",
+    AVIALABLE_PARAGRAPH:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+
+    CONTACT_TITLE: "ابقوا متابعين",
+    CONTACT_SUBTEXT:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    CONTACT_PARAGRAPH:
+      "لاشبسالاباشلاسلابس سشلايساشلايا الاسشيالاسيا يلاشالاسياسلاي الايسالايسشالاسشلا",
+    CONTACT_ADDRESS: "بيروت، لبنان",
+    CONTACT_MOBILE: "+96170787532",
+    CONTACT_EMAIL: "rafikshmoury@gmail.com",
+    NAME: "اسم",
+    EMAIL: "بريد الالكتروني",
+    SUBJECT: "موضوعات",
+    MESSAGE: "رسالة",
+    SEND_MESSAGE: "أرسل رسالة",
   },
 };

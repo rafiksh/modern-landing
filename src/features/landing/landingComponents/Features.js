@@ -61,7 +61,7 @@ const FeaturesComponent = () => {
       />
       {features.map((props) => (
         <>
-          <Col xs={8}>
+          <Col xs={24} lg={8}>
             <Card {...props} />
           </Col>
         </>

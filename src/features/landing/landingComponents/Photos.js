@@ -41,7 +41,7 @@ const PhotosComponent = () => {
   ];
   return (
     <Row id="photos" align="top" className="photos-container">
-      <Col lg={12}>
+      <Col xs={24} lg={12}>
         <Title>{t("PHOTOS_TITLE")}</Title>
         {photos.map((props) => (
           <>
@@ -51,7 +51,7 @@ const PhotosComponent = () => {
 
         <PrimaryButton>{t("LEARN_MORE")}</PrimaryButton>
       </Col>
-      <Col lg={12}>
+      <Col xs={0} lg={12}>
         <Row justify="center">
           <img src={ThumbTwo} alt="img" />
         </Row>

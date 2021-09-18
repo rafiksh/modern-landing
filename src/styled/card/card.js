@@ -20,7 +20,7 @@ const SectionHeaderCard = ({ title, text, color }) => {
           </Row>
         </Col>
       )}
-      <Col xs={24}>
+      <Col xs={24} className="header-subtext">
         <Row justify="center">
           <Paragraph color={color}>{text}</Paragraph>
         </Row>
@@ -60,7 +60,12 @@ const PlanCard = ({ Icon, title, price, featureList, color }) => {
           {title && <SubTitle color={color}>{title}</SubTitle>}
         </Row>
       </Col>
-      {price && <SubTitle color={"#7d1be1"}>{price}</SubTitle>}
+      <Col xs={24}>
+        <Row justify="center">
+          <SubTitle color="#7d1be1">{price}</SubTitle>
+        </Row>
+      </Col>
+      <Col xs={18} className="small-divider-white" />
       {featureList.map(({ key, text }) => (
         <Col xs={24} key={key}>
           <Row justify="center">

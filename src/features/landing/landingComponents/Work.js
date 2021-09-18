@@ -6,6 +6,7 @@ import { Card, SectionHeaderCard } from "../../../styled/card/card";
 
 import DownloadIcon from "../../../assets/images/download.png";
 import { ReactComponent as ArrowRightIcon } from "../../../assets/images/right-arrow.svg";
+import { ReactComponent as ArrowDownIcon } from "../../../assets/images/arrow-down.svg";
 
 const WorkComponent = () => {
   const { t } = useTranslation(["landing"]);
@@ -52,13 +53,24 @@ const WorkComponent = () => {
         <Row justify="space-between" align="middle">
           {work.map((props) => (
             <>
-              <Col>
-                <Card {...props} />
+              <Col xs={24} lg={6}>
+                <Row justify="center">
+                  <Card {...props} />
+                </Row>
               </Col>
               {props.key !== work.length && (
-                <Col>
-                  <ArrowRightIcon style={{ width: 75, height: 75 }} />
-                </Col>
+                <>
+                  <Col xs={0} lg={2}>
+                    <Row justify="center">
+                      <ArrowRightIcon style={{ width: 75, height: 75 }} />
+                    </Row>
+                  </Col>
+                  <Col xs={24} lg={0}>
+                    <Row justify="center">
+                      <ArrowDownIcon style={{ width: 75, height: 75 }} />
+                    </Row>
+                  </Col>
+                </>
               )}
             </>
           ))}

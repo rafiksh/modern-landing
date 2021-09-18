@@ -12,9 +12,9 @@ const AvialableComponent = () => {
   return (
     <Row
       id="avialable"
+      className="avialable-container"
       justify="center"
       align="middle"
-      className="avialable-container"
     >
       <SectionHeaderCard
         title={t("AVIALABLE_TITLE")}
@@ -25,6 +25,7 @@ const AvialableComponent = () => {
       <Col xs={24}>
         <Row justify="center">
           <img src={GooglePlay} alt="googleplay" />
+          <Col xs={1} />
           <img src={AppStore} alt="appstore" />
         </Row>
       </Col>

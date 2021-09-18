@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Col, Drawer, Menu, Row, Button } from "antd";
+import { Col, Drawer, Menu, Row } from "antd";
 import { HashLink } from "react-router-hash-link";
 
 import {
@@ -10,10 +10,13 @@ import {
   PhotosComponent,
   WorkComponent,
   AvialableComponent,
-  PlansComponent,
+  PricingComponent,
   ContactComponent,
 } from "./landingComponents";
-import { LinkButton } from "../../styled/button/button";
+import { LinkButton, PrimaryButton } from "../../styled/button/button";
+
+import { ReactComponent as MenuIcon } from "../../assets/images/menu.svg";
+import { ReactComponent as ArrowUp } from "../../assets/images/arrow-up.svg";
 
 import "./Landing.css";
 
@@ -39,6 +42,7 @@ const LandingComponent = () => {
   }, []);
 
   const scrollWithOffset = (el) => {
+    setIsDrawerOpen(false);
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -84;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
@@ -56,9 +60,9 @@ const LandingComponent = () => {
           {t("FEATURES")}
         </HashLink>
       </Menu.Item>
-      <Menu.Item key="pages">
-        <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#pages">
-          {t("PAGES")}
+      <Menu.Item key="photos">
+        <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#photos">
+          {t("PHOTOS")}
         </HashLink>
       </Menu.Item>
       <Menu.Item key="screenshots">
@@ -84,24 +88,24 @@ const LandingComponent = () => {
   );
   return (
     <>
-      <Row justify={"end"}>
-        <LinkButton
-          onClick={() => {
-            i18n.changeLanguage("en");
-          }}
-        >
-          English
-        </LinkButton>
-        <LinkButton
-          onClick={() => {
-            i18n.changeLanguage("ar");
-          }}
-        >
-          العربية
-        </LinkButton>
-      </Row>
-      <Row align="middle" justify="center">
-        <Col xs={22}>
+      <Row justify="center" align="middle">
+        <Col xs={22} lg={20}>
+          <Row justify="end">
+            <LinkButton
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+            >
+              English
+            </LinkButton>
+            <LinkButton
+              onClick={() => {
+                i18n.changeLanguage("ar");
+              }}
+            >
+              العربية
+            </LinkButton>
+          </Row>
           <Row justify="end" align="middle">
             <Col>
               {width > 1230 && (
@@ -111,63 +115,82 @@ const LandingComponent = () => {
               )}
 
               {width <= 1230 && (
-                <Button onClick={() => setIsDrawerOpen(true)}>Bye</Button>
+                <LinkButton onClick={() => setIsDrawerOpen(true)}>
+                  <MenuIcon style={{ height: 30, width: 30 }} />
+                </LinkButton>
               )}
             </Col>
           </Row>
         </Col>
 
-        <Col xs={22} lg={18} xl={22}>
+        <Col xs={22} lg={20}>
           <HomeComponent />
         </Col>
 
-        <Col xs={22} lg={18} xl={22}>
+        <Col xs={22} lg={20}>
           <FeaturesComponent />
         </Col>
 
-        <Col xs={22} lg={18} xl={22}>
-          <ToolsComponent />
+        <Col xs={24} className="grey-container">
+          <Row justify="center">
+            <Col xs={22} lg={20}>
+              <ToolsComponent />
+            </Col>
+          </Row>
         </Col>
 
-        <Col xs={22} lg={18} xl={22}>
+        <Col xs={22} lg={20}>
           <PhotosComponent />
         </Col>
-
-        <Col xs={22} lg={18} xl={22}>
-          <WorkComponent />
+        <Col xs={24} className="purple-container">
+          <Row justify="center">
+            <Col xs={22} lg={20}>
+              <WorkComponent />
+            </Col>
+          </Row>
+        </Col>
+        <Col xs={24} className="grey-container">
+          <Row justify="center">
+            <Col xs={22} lg={20}>
+              <PricingComponent />
+            </Col>
+          </Row>
         </Col>
 
-        <Col xs={22} lg={18} xl={22}>
-          <PlansComponent />
+        <Col xs={24} className="background-image">
+          <Row justify="center">
+            <Col xs={22} lg={20}>
+              <AvialableComponent />
+            </Col>
+          </Row>
         </Col>
 
-        <Col xs={22} lg={18} xl={22}>
-          <AvialableComponent />
-        </Col>
-
-        <Col xs={22} lg={18} xl={22}>
+        <Col xs={22} lg={20}>
           <ContactComponent />
         </Col>
       </Row>
 
       {scrollPosition > 32 && (
-        <Button
+        <PrimaryButton
           style={
             scrollPosition > 32 && {
               position: "fixed",
-              bottom: 30,
+              bottom: 80,
               right: 0,
+              width: 35,
+              overflow: "hidden",
+              borderRadius: "5px",
             }
           }
         >
           <HashLink scroll={(el) => scrollWithOffset(el)} smooth to="#">
-            {t("HOME")}
+            <ArrowUp style={{ position: "absolute", left: -10, top: 5 }} />
           </HashLink>
-        </Button>
+        </PrimaryButton>
       )}
       <Drawer
         className="landing-drawer"
-        closeIcon={<>hi</>}
+        closeIcon={<>X</>}
         placement="right"
         closable={true}
         onClose={() => setIsDrawerOpen(false)}

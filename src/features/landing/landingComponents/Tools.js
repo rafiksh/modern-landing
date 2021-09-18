@@ -34,12 +34,12 @@ const ToolsComponent = () => {
   ];
   return (
     <Row id="tools" align="top" className="tools-container">
-      <Col lg={12}>
+      <Col xs={0} lg={12}>
         <Row justify="center">
           <img src={ThumbThree} alt="img" />
         </Row>
       </Col>
-      <Col lg={12}>
+      <Col xs={24} lg={12}>
         <Title>{t("TOOLS_TITLE")}</Title>
         {tools.map((props) => (
           <>

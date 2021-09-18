@@ -12,9 +12,14 @@
 .small-divider-white {
   background-color: #ececec !important;
   height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .plan-box {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
   width: 400px;
   background-color: white;
   border-radius: 20px;
@@ -29,7 +34,9 @@
   height: 30px;
   display: block;
 }
-
+.header-subtext {
+  margin-bottom: 25px;
+}
 @media only screen and (max-width: 750px) {
   .card-box {
     padding-bottom: 50px;

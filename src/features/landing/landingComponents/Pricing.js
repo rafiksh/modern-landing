@@ -7,10 +7,10 @@ import { PlanCard, SectionHeaderCard } from "../../../styled/card/card";
 import MotorBike from "../../../assets/images/motorbike.png";
 import Bike from "../../../assets/images/bike.png";
 
-const PlansComponent = () => {
+const PricingComponent = () => {
   const { t } = useTranslation(["landing"]);
 
-  const plans = [
+  const pricing = [
     {
       key: 1,
       Icon: () => <img src={MotorBike} alt="bike" className="card-icon" />,
@@ -38,14 +38,16 @@ const PlansComponent = () => {
   ];
 
   return (
-    <Col id="plans" className="plans-container">
-      <SectionHeaderCard title={t("PLANS_TITLE")} text={t("PLANS_SUBTEXT")} />
-
+    <Col id="pricing" className="pricing-container">
+      <SectionHeaderCard
+        title={t("PRICING_TITLE")}
+        text={t("PRICING_SUBTEXT")}
+      />
       <Row justify="center" align="middle">
-        {plans.map((props) => (
+        {pricing.map((props) => (
           <>
             <PlanCard {...props} />
-            {props.key !== plans.length && <Col xs={1}></Col>}
+            {props.key !== pricing.length && <Col xs={0} lg={1}></Col>}
           </>
         ))}
       </Row>
@@ -53,4 +55,4 @@ const PlansComponent = () => {
   );
 };
 
-export { PlansComponent };
+export { PricingComponent };

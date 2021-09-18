@@ -17,16 +17,20 @@ const HomeComponent = () => {
       justify="space-between"
       align="middle"
     >
-      <Col>
-        <Title>{t("HOME_TITLE")}</Title>
-        <Col>
-          <Paragraph>{t("HOME_PARAGRAPH")}</Paragraph>
-        </Col>
-        <PrimaryButton>{t("GET_STARTED")}</PrimaryButton>
+      <Col xs={24} lg={12}>
+        <Row justify="start">
+          <Title>{t("HOME_TITLE")}</Title>
+          <Col xs={24}>
+            <Paragraph>{t("HOME_PARAGRAPH")}</Paragraph>
+          </Col>
+          <PrimaryButton>{t("GET_STARTED")}</PrimaryButton>
+        </Row>
       </Col>
 
-      <Col>
-        <img src={ThumbOne} alt={"img"} />
+      <Col xs={0} lg={12}>
+        <Row justify="center">
+          <img src={ThumbOne} alt={"img"} />
+        </Row>
       </Col>
     </Row>
   );
