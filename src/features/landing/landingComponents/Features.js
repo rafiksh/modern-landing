@@ -5,6 +5,7 @@ import { Row, Col } from "antd";
 import { Card, SectionHeaderCard } from "../../../styled/card/card";
 
 import { ReactComponent as HomeLogo } from "../../../assets/images/home.svg";
+import { ReactComponent as LocationLogo } from "../../../assets/images/map-marker.svg";
 
 const FeaturesComponent = () => {
   const { t } = useTranslation(["landing"]);
@@ -18,7 +19,7 @@ const FeaturesComponent = () => {
     },
     {
       key: 2,
-      Icon: HomeLogo,
+      Icon: LocationLogo,
       title: t("FEATURE_2_TITLE"),
       text: t("FEATURE_2_TEXT"),
     },
@@ -30,7 +31,7 @@ const FeaturesComponent = () => {
     },
     {
       key: 4,
-      Icon: HomeLogo,
+      Icon: LocationLogo,
       title: t("FEATURE_4_TITLE"),
       text: t("FEATURE_4_TEXT"),
     },
