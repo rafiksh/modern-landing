@@ -7,7 +7,7 @@ import { HomeComponent } from "./landingComponents";
 
 import "./Landing.css";
 import { LinkButton } from "../../styled/button/button";
-import { SubTitle, Title } from "../../styled/typography/typography";
+import { SubTitle } from "../../styled/typography/typography";
 
 const LandingComponent = () => {
   const { t, i18n } = useTranslation(["landing"]);

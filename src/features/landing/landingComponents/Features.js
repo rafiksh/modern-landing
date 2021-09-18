@@ -7,7 +7,7 @@ import { PrimaryButton } from "../../../styled/button/button";
 
 import ThumbOne from "../../../assets/images/thumb-1.png";
 
-const HomeComponent = () => {
+const FeaturesComponent = () => {
   const { t } = useTranslation(["landing"]);
 
   return (
@@ -27,4 +27,4 @@ const HomeComponent = () => {
   );
 };
 
-export { HomeComponent };
+export { FeaturesComponent };

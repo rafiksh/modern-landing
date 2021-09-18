@@ -1,0 +1,85 @@
+.primary {
+  border-radius: 10px;
+  background-color: #4a28dc !important;
+  border-color: #4a28dc !important;
+
+  /* span */
+
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff !important;
+}
+
+.secondary {
+  border-radius: 10px;
+  background-color: #ffffff !important;
+  border-color: #4a28dc !important;
+
+  /* span */
+
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a28dc !important;
+}
+
+.primary svg,
+.secondary svg {
+  vertical-align: middle;
+}
+
+.primary:hover,
+.primary:active,
+.primary:focus {
+  background-color: #4a28dc !important;
+  border-color: #4a28dc !important;
+  color: #f1f1f5 !important;
+  opacity: 0.8;
+}
+
+.secondary:hover,
+.secondary:active,
+.secondary:focus {
+  background-color: #f1f1f5 !important;
+  border-color: #4a28dc !important;
+  color: #4a28dc !important;
+  opacity: 0.8;
+}
+
+.link {
+  padding: 0;
+}
+
+.link > span {
+  color: #4a28dc !important;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.link:hover > span {
+  text-decoration: underline !important;
+}
+@media only screen and (max-width: 600px) {
+  .link > span {
+    font-size: 16px;
+  }
+  .primary {
+    font-size: 16px;
+  }
+  .secondary {
+    font-size: 16px;
+  }
+}
