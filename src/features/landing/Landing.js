@@ -7,6 +7,7 @@ import {
   FeaturesComponent,
   HomeComponent,
   ToolsComponent,
+  PhotosComponent,
 } from "./landingComponents";
 
 import "./Landing.css";
@@ -128,6 +129,10 @@ const LandingComponent = () => {
 
         <Col xs={22} lg={18} xl={22}>
           <ToolsComponent />
+        </Col>
+
+        <Col xs={22} lg={18} xl={22}>
+          <PhotosComponent />
         </Col>
       </Row>
 
